@@ -1,0 +1,98 @@
+<h2>All Coffee Beans</h2>
+
+<table>
+    <thead><tr>
+        <th>Bean name</th><th>Description</th><th>Location</th><th></th>
+    </tr></thead>
+    <!-- Todo: Generate table body -->
+    <tbody data-bind="foreach: beans">
+    <tr>
+        <td><input data-bind="value: name" /></td>
+        <td><input data-bind="value: description" /></td>
+        <td><input data-bind="value: country" /></td>
+        <td><a href="#" data-bind="click: $root.removeBean">Remove</a></td>
+</tr>         
+    </tr>   
+    </tbody>
+</table>
+
+<button data-bind="click: addBean">Add another bean</button>
+
+<button data-bind="click: save">Save Changes</button>
+
+<script type="text/javascript">
+
+  // Class to represent a row in the seat reservations grid
+function Bean(data) {
+    var self = this;
+    self.id = ko.observable(data.id);
+    self.name = ko.observable(data.name);
+    self.description = ko.observable(data.description);
+    self.country = ko.observable(data.country);
+    self.new_bean = ko.observable(data.new_bean);
+    self.removed = ko.observable(data.removed)
+}
+
+// Overall viewmodel for this screen, along with initial state
+function BeansViewModel() {
+    var self = this;
+    
+    // Operations
+    self.addBean = function() {
+        self.beans.push(new Bean({new_bean: true, removed: false}));
+        self.save();
+    }
+    self.removeBean = function(bean) { 
+    	bean.removed(true);
+    	self.save();
+    }
+
+    self.refresh = function() {
+	    // Load initial state from server, convert it to Bean instances, then populate self.beans
+	    $.getJSON("/beans/get_beans", function(allData) {
+	        var mappedBeans = $.map(allData, function(item) { 
+	        	item.new_bean = false;
+	    		item.removed = false;
+	        	return new Bean(item) 
+	        });
+	        self.beans(mappedBeans);
+	    }); 
+	}
+
+	// Editable data
+    self.beans = ko.observableArray([]);
+    self.refresh();
+
+    self.save = function() {
+    	newbs = [];
+    	oldbs = [];
+    	for (var i = 0; i < self.beans().length; i++)
+    	{
+    		if (self.beans()[i].removed())
+    			oldbs.push(self.beans()[i]);
+    		else (self.beans()[i].new_bean())
+    			newbs.push(self.beans()[i])
+    	}
+    	if (newbs.length > 0)
+    	{
+    		$.ajax("/beans/save", {
+            data: ko.toJSON({ beans: newbs }),
+            type: "post", contentType: "application/json",
+            success: function(result) { self.refresh(); }
+        	});
+    	}
+        
+        if (oldbs.length > 0)
+        {
+        	$.ajax("/beans/remove", {
+            data: ko.toJSON({ beans: oldbs }),
+            type: "post", contentType: "application/json",
+            success: function(result) { self.refresh(); }
+        	});
+        }
+    };    
+}
+
+ko.applyBindings(new BeansViewModel());
+
+</script>

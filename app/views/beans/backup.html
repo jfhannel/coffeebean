@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+</head>
+
+<title>Coffee Beans</title>
+
+<body>
+
+<h2>All Coffee Beans</h2>
+
+<table>
+    <thead><tr>
+        <th>Bean name</th><th>Description</th><th>Location</th><th></th>
+    </tr></thead>
+    <!-- Todo: Generate table body -->
+    <tbody data-bind="foreach: beans">
+    <tr>
+        <td><input data-bind="value: name" /></td>
+        <td><input data-bind="value: description" /></td>
+        <td><input data-bind="value: country" /></td>
+        <td><a href="#" data-bind="click: $root.removeBean">Remove</a></td>
+</tr>         
+    </tr>   
+    </tbody>
+</table>
+
+<button data-bind="click: addBean">Add another bean</button>
+
+</body>
+
+<script type="text/javascript" src='../../../components/knockout-3.2.0.js'>
+  // Class to represent a row in the seat reservations grid
+function Bean(name, description, country) {
+    var self = this;
+    self.name = ko.observable(name);
+    self.description = ko.observable(description);
+    self.country = ko.observable(country);
+}
+
+// Overall viewmodel for this screen, along with initial state
+function BeansViewModel() {
+    var self = this;
+    
+    // Operations
+    self.addBean = function() {
+        self.beans.push(new Bean("", "", ""));
+    }
+    self.removeBean = function(seat) { self.beans.remove(bean) }
+
+    // Editable data
+    self.beans = ko.observableArray([
+        new Bean("Bean 1", "strong bean", "Brazil"),
+        new Bean("Bean 2", "weak bean", "Canada")
+    ]);
+}
+
+ko.applyBindings(new BeansViewModel());
+</script>
+
+</html>

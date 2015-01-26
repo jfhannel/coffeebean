@@ -1,0 +1,377 @@
+<table>
+<tr>
+<td>
+<h3>Select User</h3>
+<select id="userselect" data-bind="options: users, optionsText: 'name', value: curr_user">
+</select>
+</td>
+
+<td>
+<h3>Select Package</h3>
+
+<select id="packageselect" data-bind="options: packages, optionsText: 'name', value: curr_package">
+</select>
+</td>
+
+<td>
+<h3>Add New User</h3>
+
+<input data-bind="value: new_username" />
+<button data-bind="click: addUser">Add user</button>
+</td>
+</tr>
+</table>
+
+<br>
+<div>
+<h3>Search Beans</h3><input data-bind="value: searchText" />
+</div>
+<br>
+
+<table>
+    <thead><tr>
+        <th>Include in Package</th><th>Bean name</th><th>Description</th><th>Location</th><th></th>
+    </tr></thead>
+    <tbody data-bind="foreach: beans">
+    <tr data-bind="visible: visible">
+    	<td><input type="checkbox" data-bind="checked: checked" /></td>
+        <td><input data-bind="value: name" /></td>
+        <td><input data-bind="value: description" /></td>
+        <td><input data-bind="value: country" /></td>
+        <td><button data-bind="click: $root.removeBean">Remove</button></td>
+        <td><button class="modalInput" data-bind="click: function() { $root.showComments(id); }">Comments</button></td>
+</tr>         
+    </tr>   
+    </tbody>
+</table>
+
+<button data-bind="click: addBean">Add another bean</button>
+
+<button data-bind="click: save_beans">Save Changes</button>
+
+<button data-bind="click: mark_beans">Try Selected Beans</button>
+<br>
+
+<input data-bind="value: new_packagename" />
+<button title="Create package with selected beans" data-bind="click: addPackage">Create Package</button>
+
+<div id="dialog-comments" title="Comments">
+	<table>
+	<tbody data-bind="foreach: comments">
+	<tr><td><span data-bind="text: body"></span></td></tr>
+	</tbody>
+	</table>
+    <input id="commentInput" data-bind="value: commentText" />
+</div>
+
+<script type="text/javascript">
+
+function User(data) {
+    var self = this;
+    self.id = ko.observable(data.id);
+    self.name = ko.observable(data.name);
+    self.new_user = ko.observable(data.new_user);
+}
+
+function Bean(data) {
+    var self = this;
+    self.id = ko.observable(data.id);
+    self.name = ko.observable(data.name);
+    self.description = ko.observable(data.description);
+    self.country = ko.observable(data.country);
+    self.new_bean = ko.observable(data.new_bean);
+    self.removed = ko.observable(data.removed);
+    self.visible = ko.observable(true);
+    self.checked = ko.observable(false);
+}
+
+function Package(data) {
+	var self = this;
+	self.id = ko.observable(data.id);
+	self.name = ko.observable(data.name);
+	self.ownerid = ko.observable(data.ownerid);
+	self.beanids = ko.observableArray(data.beanids);
+	self.new_package = ko.observable(data.new_package);
+}
+
+function BeansViewModel() {
+    var self = this;
+    self.new_username = ko.observable("<new username>");
+    self.new_packagename = ko.observable("<new package name>");
+    self.allBeansLabel = "All Beans";
+    self.myBeansLabel = "My Tried Beans";
+
+    // Editable data
+    self.users = ko.observableArray([]);
+    self.beans = ko.observableArray([]);
+    self.packages = ko.observableArray([]);
+    self.curr_package = ko.observable(new Package({name: self.allBeansLabel}));
+    self.curr_user = ko.observable(null);
+    self.searchText = ko.observable("");
+    self.commentText = ko.observable("");
+    self.comments = ko.observableArray([]);
+
+    self.searchText.subscribe(function(newValue) {
+		for (var i = 0; i < self.beans().length; i++)
+		{
+			if (self.beans()[i].name().indexOf(newValue) == -1)
+				self.beans()[i].visible(false);
+			else self.beans()[i].visible(true);
+		}
+    });
+
+    function showBeans(beans)
+    {
+    	bids = [];
+		for (var i = 0; i < beans.length; i++)
+			bids.push(beans[i].id);
+
+		for (var i = 0; i < self.beans().length; i++)
+		{
+			if (bids.indexOf(self.beans()[i].id()) > -1)
+				self.beans()[i].visible(true);
+			else self.beans()[i].visible(false);
+		}
+    }
+
+    self.curr_package.subscribe(function(newValue) {
+    	if (newValue)
+    	{
+    		if (newValue.name() == self.allBeansLabel)
+	    	{
+	    		for (var i = 0; i < self.beans().length; i++)
+	    			self.beans()[i].visible(true);
+	    	}
+	    	else if (newValue.name() == self.myBeansLabel)
+	    	{
+	    		$.getJSON("/main/get_beans_of_user?curruser="+String(self.curr_user().id()), function(allData) {
+
+	    			showBeans(allData);
+	    		});
+	    	}	
+	    	else 
+	    	{
+	    		$.getJSON("/main/get_beans_in_package?currpackage="+String(self.curr_package().id()), function(allData) {
+
+	    			showBeans(allData);
+	    		});
+	    	}
+    	}
+    });
+        
+    // Operations
+    self.addUser = function() {
+        self.users.push(new User({new_user: true, name: self.new_username}));
+        self.save_users();
+        self.new_username("<new username>");
+        self.refresh_users();
+    }
+
+    self.addBean = function() {
+        self.beans.push(new Bean({new_bean: true, removed: false}));
+        self.save_beans();
+        self.refresh_beans();
+    }
+
+    self.addPackage = function() {
+    	var bean_ids = [];
+    	for (var i = 0; i < self.beans().length; i++)
+    	{
+    		if (self.beans()[i].checked())
+    			bean_ids.push(self.beans()[i].id());
+    	}
+
+    	self.packages.push(new Package({
+    		new_package: true, 
+    		name: self.new_packagename,
+    		ownerid: self.curr_user().id(),
+    		beanids: bean_ids }));
+    	self.save_packages();
+    	self.new_packagename("<new package name>");
+    	self.refresh_packages();
+    }
+
+    self.submitComment = function(beanid) {
+    	$.ajax("/main/save_comment", {
+            data: ko.toJSON({ userid: self.curr_user().id(), beanid: beanid, commentbody: self.commentText }),
+            type: "post", contentType: "application/json",
+            success: function(result) { self.commentText(""); }
+        	});
+    };
+
+    self.showComments = function(beanid) {
+    	$.ajax("/main/get_comments_of_bean", {
+            data: ko.toJSON({ beanid: beanid }),
+            type: "post", contentType: "application/json",
+            success: function(result) { self.comments(result); }
+        	});
+
+    	$( "#dialog-comments" ).dialog({
+            resizable: false,
+            modal: true,
+            buttons: {
+                Comment: function() {
+                    self.submitComment(beanid());
+                },
+                Close: function() {
+                    $(this).dialog( "close" );
+                }
+            }
+        });
+    };
+
+    self.refresh = function() {
+    	self.refresh_users();
+    	self.refresh_beans();
+    	self.refresh_packages();
+    };
+
+    self.refresh_users = function() {
+	    $.getJSON("/main/get_users", function(allData) {
+	        var mappedUsers = $.map(allData, function(item) { 
+	        	item.new_user = false;
+	        	return new User(item) 
+	        });
+
+	        self.users(mappedUsers);
+	    });
+
+	};
+
+	self.refresh_beans = function() {
+	    $.getJSON("/main/get_beans", function(allData) {
+	        var mappedBeans = $.map(allData, function(item) { 
+	        	item.new_bean = false;
+	    		item.removed = false;
+	        	return new Bean(item); 
+	        });
+
+	        function updateChecked(newbean)
+		    {
+		    	for (var i = 0; i < self.beans().length; i++)
+		    	{
+		    		if (newbean.id() == self.beans()[i].id())
+		    			newbean.checked(self.beans()[i].checked());
+		    	}
+		    	return true;
+		    }
+
+	        self.beans(mappedBeans.filter(updateChecked));
+	    });
+	};
+
+	self.refresh_packages = function() {
+	    $.getJSON("/main/get_packages", function(allData) {
+	        var mappedPackages = $.map(allData, function(item) { 
+	        	item.new_package = false;
+	        	return new Package(item);
+	        });
+
+	        mappedPackages.push(new Package({
+	        	beanids: null, 
+	        	new_package: false,
+	        	name: self.allBeansLabel,
+	        	ownerid: null }));
+
+	        mappedPackages.push(new Package({
+	        	beanids: null, 
+	        	new_package: false,
+	        	name: self.myBeansLabel,
+	        	ownerid: null }));
+
+	        self.packages(mappedPackages);
+	    }); 
+	};
+
+    self.save_users = function() {
+    	newu = [];
+    	for (var i = 0; i < self.users().length; i++)
+    	{
+    		if (self.users()[i].new_user())
+    			newu.push(self.users()[i]);
+    	}
+    	if (newu.length > 0)
+    	{
+    		$.ajax("/main/save_users", {
+            data: ko.toJSON({ users: newu }),
+            type: "post", contentType: "application/json",
+            success: function(result) { /* self.refresh(); */}
+        	});
+    	}
+    };
+
+    self.save_beans = function() {
+    	newbs = [];
+    	oldbs = [];
+    	for (var i = 0; i < self.beans().length; i++)
+    	{
+    		if (self.beans()[i].removed())
+    			oldbs.push(self.beans()[i]);
+    		else
+    		{
+    			newbs.push(self.beans()[i]);
+    		}
+    	}
+    	if (newbs.length > 0)
+    	{
+    		$.ajax("/main/save_beans", {
+            data: ko.toJSON({ beans: newbs }),
+            type: "post", contentType: "application/json",
+            success: function(result) { /* self.refresh(); */ }
+        	});
+    	}
+        
+        if (oldbs.length > 0)
+        {
+        	$.ajax("/main/remove_beans", {
+            data: ko.toJSON({ beans: oldbs }),
+            type: "post", contentType: "application/json",
+            success: function(result) { /* self.refresh(); */ }
+        	});
+        }
+    };
+
+    self.mark_beans = function() {
+    	var bean_ids = [];
+    	for (var i = 0; i < self.beans().length; i++)
+    	{
+    		if (self.beans()[i].checked())
+    			bean_ids.push(self.beans()[i].id());
+    	}
+
+    	$.ajax("/main/mark_beans", {
+            data: ko.toJSON({ beans: bean_ids, curruser: self.curr_user().id() }),
+            type: "post", contentType: "application/json",
+            success: function(result) { /* self.refresh(); */ }
+        	});
+    };
+
+    self.save_packages = function() {
+    	newp = [];
+    	for (var i = 0; i < self.packages().length; i++)
+    	{
+    		if (self.packages()[i].new_package())
+    			newp.push(self.packages()[i]);
+    	}
+    	if (newp.length > 0)
+    	{
+    		$.ajax("/main/save_packages", {
+            data: ko.toJSON({ packages: newp }),
+            type: "post", contentType: "application/json",
+            success: function(result) { /* self.refresh(); */ }
+        	});
+    	}
+    };
+    
+    self.removeBean = function(bean) { 
+    	bean.removed(true);
+    	self.save_beans();
+    	self.beans.remove(bean);
+    }
+
+    self.refresh();
+}
+
+ko.applyBindings(new BeansViewModel());
+
+</script>
