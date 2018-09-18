@@ -1,4 +1,4 @@
-class Associations < ActiveRecord::Migration
+class Associations < ActiveRecord::Migration[5.2]
   def change
   	add_column :beans, :user_id, :integer
   	add_column :users, :bean_id, :integer

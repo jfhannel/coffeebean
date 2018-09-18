@@ -41498,3 +41498,1219 @@ Processing by MainController#get_beans_of_user as JSON
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
   [1m[35mBean Load (0.3ms)[0m  SELECT "beans".* FROM "beans"  WHERE "beans"."user_id" = $1  [["user_id", 2]]
 Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+Started GET "/" for ::1 at 2018-09-18 12:14:04 -0700
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.3) lib/pg.rb:56:in `initialize'
+pg (1.1.3) lib/pg.rb:56:in `new'
+pg (1.1.3) lib/pg.rb:56:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+  [1m[35m (253.9ms)[0m  [1m[35mCREATE DATABASE "db/developmentpg" ENCODING = 'utf8'[0m
+  [1m[35m (253.1ms)[0m  [1m[35mCREATE DATABASE "db/testpg" ENCODING = 'utf8'[0m
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+Started GET "/" for ::1 at 2018-09-18 12:18:44 -0700
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/" for ::1 at 2018-09-18 12:18:45 -0700
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7778137105443893685)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20150116214838)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7778137105443893685)[0m
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7778137105443893685)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20150116214838)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20150116214838"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBeans (20150116214841)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7778137105443893685)[0m
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7778137105443893685)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBeans (20150116214841)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7778137105443893685)[0m
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7778137105443893685)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBeans (20150116214841)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "beans" ("id" bigserial primary key, "name" character varying, "country" character varying, "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20150116214841"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateComments (20150116215951)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "body" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20150116215951"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePackages (20150121203520)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "packages" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20150121203520"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddSessionsTable (20150123193341)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "sessions" ("id" bigserial primary key, "session_id" character varying NOT NULL, "data" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_sessions_on_session_id" ON "sessions"  ("session_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_sessions_on_updated_at" ON "sessions"  ("updated_at")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20150123193341"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUserIdToPackages (20150125185526)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "packages" ADD "user_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20150125185526"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPackageIdToUsers (20150125185650)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7778137105443893685)[0m
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7778137105443893685)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPackageIdToUsers (20150125185650)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "package_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20150125185650"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPackageIdToBeans (20150125190216)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "beans" ADD "package_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20150125190216"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to Associations (20150125203051)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "beans" ADD "user_id" integer[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "bean_id" integer[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "comments" ADD "user_id" integer[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "comment_id" integer[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "comments" ADD "bean_id" integer[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "beans" ADD "comment_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20150125203051"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-18 19:21:41.663123"], ["updated_at", "2018-09-18 19:21:41.663123"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7778137105443893685)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2018-09-18 12:21:45 -0700
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.1ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-09-18 12:21:47 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+Started GET "/" for ::1 at 2018-09-18 12:31:47 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-09-18 12:31:48 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+Started GET "/" for ::1 at 2018-09-18 12:34:09 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main" for ::1 at 2018-09-18 12:34:11 -0700
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for MainController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/main" for ::1 at 2018-09-18 12:35:03 -0700
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for MainController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/" for ::1 at 2018-09-18 12:35:08 -0700
+Processing by BeansController#index as HTML
+  Rendering beans/index.html.erb within layouts/application
+  Rendered beans/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 468ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (dyld: Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.59.dylib
+  Referenced from: /usr/local/bin/node
+  Reason: image not found
+):
+    2: <html>
+    3: <head>
+    4:   <title>Coffee Beans</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  
+(execjs):1
+app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4304850445233107461_70252821814960'
+Started GET "/" for ::1 at 2018-09-18 12:52:02 -0700
+Processing by BeansController#index as HTML
+  Rendering beans/index.html.erb within layouts/application
+  Rendered beans/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1045ms (Views: 1032.7ms | ActiveRecord: 10.2ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SessionStore::Session Update (0.4ms)[0m  [1m[33mUPDATE "sessions" SET "data" = $1, "updated_at" = $2 WHERE "sessions"."id" = $3[0m  [["data", "BAh7BkkiEF9jc3JmX3Rva2VuBjoGRUZJIjFmdzBFL0dYUlhBYUJPZVRmNHEw\ndUppMkx2ZnpnbXdxUXVtL2dtWlNoT3BnPQY7AEY=\n"], ["updated_at", "2018-09-18 19:52:03.446544"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/assets/main.self-fa9bc959aeec271080b127034aa8a78c82c300f1fc58a2cdc4254102e904c697.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/beans.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/application.self-95c290add38fb427f3b8786a42fb99ba17da380b4f5bcc787b1e35f26c5d5f9d.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/theme.self-830c3407ba1359ea36eee978235be14de5b78dacfa658a31226fe4f2b0faa7e7.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/core.self-e4bdefd3813c8a715955a6c65b9e730846dcae6a0576618563d635ff0b18a3ca.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/accordion.self-aa0730fc025317fed4feff2aa5fc07cba5a545dfc5c913a2984ba6f8695b29fb.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/autocomplete.self-f0b810a4a7bb8c90994675d7c5bfe636d615a5785cf81cae3340aa5e6adc55ca.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/button.self-c459cf02498a2311af9ededbe220879035792a81f5f8478d47edd8f9aa202be2.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/checkboxradio.self-98c7262aff3710f07beb8142dc6fb7c88ef0596dedb7909984e5554e06450760.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/controlgroup.self-5f4cfb6eb047fc4a163c63848156a4bf2dc4daf33358aff3aa63fa10a31f9011.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/datepicker.self-3047420a03ae2233615bf455c1e7804ce8804db93879fcdcd757f73ce60ebec1.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/dialog.self-cfc405a38e0296def8d55cc92cac53d0a2006709b2376a36a31d2f31e5fa839d.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/draggable.self-37c2539362d9d0af129d37fb409f6c33f35d75492c61c05a8dc4f278a0d9057f.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/menu.self-5bc653bb1a86d1ac2565267f7c29a590fb1b07b9abc75d696d18408c376fa1e1.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/progressbar.self-1b6f4c0b705f8fa475f566643777a7a62dc3bcad5e8d8c8b7a643226827a35f7.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/resizable.self-664ac62d66e39e618f230faeba7e4745104a6217009c0f02a5ef78d00146c9b8.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/selectable.self-19c99ff0e762c31563133c19f00eaea0c6901bc26757751c8eef675ef117a977.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/selectmenu.self-4c64fa52068bb0ab5ab7beee995fb73714c5cfb571e1a9878ae67d4221ba62ad.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/sortable.self-cfd0c3e3334e30aac7be47a8577778f43a41d737fd78981dca9f2ebc05351c31.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/slider.self-4eeb158ab946298510cd1c33edbbb15be2310642f056555b156e27417fdd85bc.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/spinner.self-7031500c1e002a164c88716bc7e947a35bf63ac016274357338097bf35cab77d.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/base.self-76599afe9b7687b8479ce5344363edbf948b417613a3beec7a7a74bacb0cc1c8.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/tooltip.self-a7e58af2915ed216ce5a397dbe7db194a5c1d51e8876136cae3903d9ae41c6d9.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/all.self-131cc322272828d76a6354d061a4660293e55426159aa19231ad578926b73f4a.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/tabs.self-d3e3dd1ce30228648f314c5c5bb8c40cb8aecdad4bbda8d1b1eb8eb496cda303.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/beans.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/knockout.self-792c88ca8023f42e85dee3c1fefdef3f1618f6dcd323cd818fc092c8e54e479d.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/version.self-c8e3d1203da26ea7efdf83c1eabb3f0ba55cb68e463f5ccf0d77bd15ce6a8e61.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/data.self-2067c82e6fe39a9cba5623206a5dc28d5c60d26b95cd100855b78cacf72865b8.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/disable-selection.self-5675f71f2fbbc6857ea700ba843af748b50dbc0150cc87932a7d05ec016bb659.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/focusable.self-426e99e67d1f1bd4cb444fd878ee63a6de1f5d1d61451e43022c86214b9eec64.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/form.self-711978b53107be2d9ef1b7369beb151b229cefa8c1405a056d3c34262d5b477e.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/ie.self-163eb039dcb1e0c3471b7d91386eabb8753da6906e84824c019f9ff56bdb83a6.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/keycode.self-ad63cd20acf49dd333bbbc537454d7d475bd610eb5b88de0dca009f0c3d314b1.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/escape-selector.self-43e4d61501e4ffb1ecba387affbae1eb3e1c863ab0b0e71897851cddd246e50e.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/labels.self-c0448a3cb597a9a9429be814ab0e9ed2a14d85604555b4cff897adf3f0415f38.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/jquery-1-7.self-22c197e38fc01a29431530c4c5c7263e26d2b611994b1f9c5c8c900a97b4bc44.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/safe-active-element.self-a1f1a1a7dae3269ce03f6fffb2dcc9b4a7490f5d546c65d54417bec3be24b668.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/safe-blur.self-2cc24c46132d51c7724f6371154241b0a81c9bae5d5681d8f62b01ce46236726.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/plugin.self-d8f576c8e073ca51f095505f47bd09d306b875404cd90afcbb6338287cfb0247.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/scroll-parent.self-38e26a71a450a29fb63425e8f589a7046862f927eb0a1dbf6a6c44da05196d2e.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/unique-id.self-66e85ac85cd0b6b8b1bb89369fc65f608f716869dc0930862a8d421a57a9580a.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/tabbable.self-f3f62ceed772d3a325cebd6a03221f8a8cb02c6150f4feba738c6525a2953690.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/core.self-886760af898381620a8980841c646ae70e894b5292c3138e6dfd75b6904deffb.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effect.self-776455da1682afff3a4974146aa96ca840597b879ed3797af0604063527443c6.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/position.self-1b49c8c521e67a4a88bfdad6b4d944d33686d25009a0e40a1e170acdd7b6962a.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/widget.self-fca20bcec06d192f97cffa6e734e24360e227237b8ae7d7e7e60754df7d5444f.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/form-reset-mixin.self-3a447942586b5719fdd7f1d1a3ac0da9e757a0eb8f4a7cb145f6deb820d2dc54.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effects/effect-blind.self-2f8923f5c3073717dad35ac1f9bd4dbc13d2f9c8128f7dbea9819921338271f4.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effects/effect-bounce.self-ca3686abc7c667b5380422af36b618923c2fc8e901b3eb2ff627f1cdef60486a.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effects/effect-clip.self-9e606afd1b0d1679f42b1ce5c2ad29f242ed98a9b1a473a9ef8a8bf10df2afe4.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effects/effect-drop.self-481600061a28b5621b1d78187468e63f057665ce6af6401db851f9b79e345965.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effects/effect-explode.self-b5f68a634df4bc19111474eb15bcd99597dc19c721b33647fbb04f2bb6d52ca3.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effects/effect-fade.self-60febf4d2a1f6f013852a42da59c74d840f205715162a2b11e734fd4dd73a519.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effects/effect-fold.self-78adc6cc7f2d8dac25e8c82164ae61cc3160bb5280ed3d24dd96a576e37a6e46.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effects/effect-scale.self-88872e591cdbf30b3d09946e82e96e25bcd99b03857ead844a503301e6de71f3.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effects/effect-highlight.self-842a0db414abed8fbccb48908bd933b32c93c6b9d725160c85dc2bde708fa753.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effects/effect-size.self-2094878ac7ba38dcd4539cd4595fa4d6ed7182be8bb6f03785684a5e470a293d.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effects/effect-puff.self-be0ba8a98762bf10054deb4e8bdf92c44de0d570714624d16c396f1ffe3a82d6.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effects/effect-pulsate.self-bf83d1979be265f242fceb95cc3cfeca5467e4aab9cdea27ebb6f2e17bdaae2e.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effects/effect-shake.self-867270f4e72f7895d38b10fdf9a6ba20f22bee88ac4d79654a9227c14141e1ca.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effects/effect-slide.self-b59b0b36df7b3e5e4f4190ab51e5c212744d2b34d5ed14c96bfe9c8a3096c00b.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/effects/effect-transfer.self-5ab6d30ecb0b73e2b9a528f6d66c0732ba43a93a5326d88dae547f0c7c759e79.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/widgets/menu.self-0730fe713007bd93e6db569352a20ed92448299505ff6f525bc0dc6dd488254e.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/widgets/accordion.self-267aabfe487e53fce0399a77f9030a87b9d8a409eb30c4c85c5637da9ac35429.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/widgets/autocomplete.self-6a89d7a43741ec810ef95de143a7c0297e2e4368ebecff64493ebb7a9ac3a524.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/widgets/controlgroup.self-0b7409f97114a33de116bd5429e9df199cbdea3f276d8bd725c4c2c60f244711.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/widgets/checkboxradio.self-60f68cb16012ef210c931076ada2d65d54a8c74a2dc71ce383af758460f8b686.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/widgets/button.self-659b51f6fb5303f90ed8cf551509063770a50168a15795ba834b08f8bf2e0ce0.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/widgets/datepicker.self-2af0dec09da99d687c31fc224e940687a4eb3694e7b38b0871bba475cad86120.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/widgets/mouse.self-f0790a202dcf54fab051e71b042335d5346f9cceb0f645223c1dab93f349a04b.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/widgets/draggable.self-42c3eda0b49f105628cea7580fe38c7ed77467cee384bb2c4e095a2bd0a172e6.js?body=1" for ::1 at 2018-09-18 12:52:03 -0700
+Started GET "/assets/jquery-ui/widgets/resizable.self-1a46c2f5b876918e02bf979080e56f57846590cd880721bca5058e84f7f60bae.js?body=1" for ::1 at 2018-09-18 12:52:04 -0700
+Started GET "/assets/jquery-ui/widgets/dialog.self-2bd687f9580c0be4213c50b4bb1211c28ceedb045eba954e63d40bfbb4d1affd.js?body=1" for ::1 at 2018-09-18 12:52:04 -0700
+Started GET "/assets/jquery-ui/widgets/droppable.self-4e3be0d7524dd1852e3b37ae00cd0c351c6178bcad39b17315cca941ddd44148.js?body=1" for ::1 at 2018-09-18 12:52:04 -0700
+Started GET "/assets/jquery-ui/widgets/progressbar.self-3bf965ce4e8ade2f07336ae5ffce7fe58897333238561761ffcb16f31af673fc.js?body=1" for ::1 at 2018-09-18 12:52:04 -0700
+Started GET "/assets/jquery-ui/widgets/selectable.self-a364da09c555890f5bb64704711594a88e94988edb285735bda59431a749226e.js?body=1" for ::1 at 2018-09-18 12:52:04 -0700
+Started GET "/assets/jquery-ui/widgets/selectmenu.self-43e0fc6b5fba037933a7d89a5b2a7127aa9c7494cc605c2dcd3146265e2d3d35.js?body=1" for ::1 at 2018-09-18 12:52:04 -0700
+Started GET "/assets/jquery-ui/widgets/slider.self-f166e8b345d6a2376ab8f43b05ab7629016706df83f2d96113cf5d8905c3d028.js?body=1" for ::1 at 2018-09-18 12:52:04 -0700
+Started GET "/assets/jquery-ui/widgets/sortable.self-6e5e1f07a29b5a89ec1d359363d2800904e3ae548a38ab2f8eded36746d1adbe.js?body=1" for ::1 at 2018-09-18 12:52:04 -0700
+Started GET "/assets/jquery-ui/widgets/spinner.self-2769386b6b06e175a13ccdcd6d2d0cd40c45cec19607bcb818cee0704c165557.js?body=1" for ::1 at 2018-09-18 12:52:04 -0700
+Started GET "/assets/jquery-ui/widgets/tabs.self-b7f60535e992224ca66c3f11dc943eba9ef42a9605241e27b9dba24c7efb287e.js?body=1" for ::1 at 2018-09-18 12:52:04 -0700
+Started GET "/assets/jquery-ui/widgets/tooltip.self-50ae9488af573c99a78b60209bce5c7a4affc4e175fef523942acb163dd8deb8.js?body=1" for ::1 at 2018-09-18 12:52:04 -0700
+Started GET "/assets/jquery-ui.self-d4c1ae19d9b853ec1c8c83784fa979bbe4075a84932a080bbd7d7706240410e1.js?body=1" for ::1 at 2018-09-18 12:52:04 -0700
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1" for ::1 at 2018-09-18 12:52:04 -0700
+Started GET "/beans/get_beans" for ::1 at 2018-09-18 12:52:04 -0700
+Processing by BeansController#get_beans as JSON
+  [1m[36mBean Load (0.9ms)[0m  [1m[34mSELECT "beans".* FROM "beans"[0m
+Completed 200 OK in 13ms (Views: 1.5ms | ActiveRecord: 4.6ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/beans/save" for ::1 at 2018-09-18 12:52:06 -0700
+Processing by BeansController#save as */*
+  Parameters: {"beans"=>[{"new_bean"=>true, "removed"=>false}], "bean"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBean Create (0.5ms)[0m  [1m[32mINSERT INTO "beans" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2018-09-18 19:52:06.995890"], ["updated_at", "2018-09-18 19:52:06.995890"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 4.1ms)
+
+
+  
+ActionView::MissingTemplate (Missing template beans/save, application/save with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jordanhannel/Documents/tessbday/coffeebean/app/views"
+):
+  
+app/controllers/beans_controller.rb:30:in `save'
+Started POST "/beans/save" for ::1 at 2018-09-18 12:52:12 -0700
+Processing by BeansController#save as */*
+  Parameters: {"beans"=>[{"name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>true, "removed"=>false}], "bean"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBean Create (0.2ms)[0m  [1m[32mINSERT INTO "beans" ("name", "country", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "lel"], ["country", "lul"], ["description", "lol"], ["created_at", "2018-09-18 19:52:12.498364"], ["updated_at", "2018-09-18 19:52:12.498364"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::MissingTemplate (Missing template beans/save, application/save with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jordanhannel/Documents/tessbday/coffeebean/app/views"
+):
+  
+app/controllers/beans_controller.rb:30:in `save'
+Started POST "/beans/save" for ::1 at 2018-09-18 12:52:15 -0700
+Processing by BeansController#save as */*
+  Parameters: {"beans"=>[{"name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>true, "removed"=>false}, {"new_bean"=>true, "removed"=>false}], "bean"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBean Create (0.4ms)[0m  [1m[32mINSERT INTO "beans" ("name", "country", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "lel"], ["country", "lul"], ["description", "lol"], ["created_at", "2018-09-18 19:52:15.131097"], ["updated_at", "2018-09-18 19:52:15.131097"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBean Create (0.2ms)[0m  [1m[32mINSERT INTO "beans" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2018-09-18 19:52:15.133439"], ["updated_at", "2018-09-18 19:52:15.133439"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::MissingTemplate (Missing template beans/save, application/save with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jordanhannel/Documents/tessbday/coffeebean/app/views"
+):
+  
+app/controllers/beans_controller.rb:30:in `save'
+Started GET "/" for ::1 at 2018-09-18 12:53:40 -0700
+Processing by BeansController#index as HTML
+  Rendering beans/index.html.erb within layouts/application
+  Rendered beans/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 146ms (Views: 143.8ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/beans/get_beans" for ::1 at 2018-09-18 12:53:41 -0700
+Processing by BeansController#get_beans as JSON
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT "beans".* FROM "beans"[0m
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/beans/save" for ::1 at 2018-09-18 12:53:44 -0700
+Processing by BeansController#save as */*
+  Parameters: {"beans"=>[{"id"=>1, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>false}, {"id"=>2, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>false}, {"id"=>3, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>false}, {"id"=>4, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>false}], "bean"=>{}}
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::MissingTemplate (Missing template beans/save, application/save with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jordanhannel/Documents/tessbday/coffeebean/app/views"
+):
+  
+app/controllers/beans_controller.rb:30:in `save'
+Started GET "/" for ::1 at 2018-09-18 12:53:52 -0700
+Processing by BeansController#index as HTML
+  Rendering beans/index.html.erb within layouts/application
+  Rendered beans/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 147ms (Views: 144.8ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/beans/get_beans" for ::1 at 2018-09-18 12:53:53 -0700
+Processing by BeansController#get_beans as JSON
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT "beans".* FROM "beans"[0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/beans/save" for ::1 at 2018-09-18 12:53:59 -0700
+Processing by BeansController#save as */*
+  Parameters: {"beans"=>[{"id"=>1, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>false}, {"id"=>2, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>false}, {"id"=>3, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>false}, {"id"=>4, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>false}], "bean"=>{}}
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBean Load (0.1ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::MissingTemplate (Missing template beans/save, application/save with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jordanhannel/Documents/tessbday/coffeebean/app/views"
+):
+  
+app/controllers/beans_controller.rb:30:in `save'
+Started GET "/backup" for ::1 at 2018-09-18 13:07:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/backup"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/main" for ::1 at 2018-09-18 13:08:19 -0700
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for MainController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/beans/all" for ::1 at 2018-09-18 13:09:10 -0700
+  
+AbstractController::ActionNotFound (The action 'all' could not be found for BeansController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/main/get_beans" for ::1 at 2018-09-18 13:09:36 -0700
+Processing by MainController#get_beans as HTML
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/main_controller.rb:14:in `get_beans'
+Started GET "/main/get_beans" for ::1 at 2018-09-18 13:11:14 -0700
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+Processing by MainController#get_beans as HTML
+Completed 406 Not Acceptable in 5ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/main_controller.rb:14:in `get_beans'
+Started GET "/main/get_beans" for ::1 at 2018-09-18 13:11:16 -0700
+Processing by MainController#get_beans as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/main_controller.rb:14:in `get_beans'
+Started GET "/main/get_beans" for ::1 at 2018-09-18 13:11:55 -0700
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:59)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 6.0. (called from block in <top (required)> at /Users/jordanhannel/Documents/tessbday/coffeebean/config/routes.rb:60)
+Processing by MainController#get_beans as HTML
+Completed 406 Not Acceptable in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/main_controller.rb:14:in `get_beans'
+Started GET "/main/get_beans" for ::1 at 2018-09-18 13:12:33 -0700
+Processing by MainController#get_beans as HTML
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/main_controller.rb:14:in `get_beans'
+Started GET "/main/" for ::1 at 2018-09-18 13:14:57 -0700
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for MainController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/handler/webrick.rb:86:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/Users/jordanhannel/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/" for ::1 at 2018-09-18 13:14:59 -0700
+Processing by BeansController#index as HTML
+  Rendering beans/index.html.erb within layouts/application
+  Rendered beans/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 145ms (Views: 142.9ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/beans/get_beans" for ::1 at 2018-09-18 13:15:00 -0700
+Processing by BeansController#get_beans as JSON
+  [1m[36mBean Load (0.4ms)[0m  [1m[34mSELECT "beans".* FROM "beans"[0m
+Completed 200 OK in 13ms (Views: 7.2ms | ActiveRecord: 5.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/beans/save" for ::1 at 2018-09-18 13:15:37 -0700
+Started POST "/beans/remove" for ::1 at 2018-09-18 13:15:37 -0700
+Processing by BeansController#save as */*
+  Parameters: {"beans"=>[{"id"=>1, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>true}, {"id"=>2, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>false}, {"id"=>3, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>false}, {"id"=>4, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>false}], "bean"=>{}}
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBean Load (0.4ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::MissingTemplate (Missing template beans/save, application/save with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jordanhannel/Documents/tessbday/coffeebean/app/views"
+):
+  
+app/controllers/beans_controller.rb:30:in `save'
+Processing by BeansController#remove as */*
+  Parameters: {"beans"=>[{"id"=>1, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>true}], "bean"=>{}}
+  [1m[36mBean Load (0.3ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBean Destroy (0.5ms)[0m  [1m[31mDELETE FROM "beans" WHERE "beans"."id" = $1[0m  [["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 4.2ms)
+
+
+  
+ActionView::MissingTemplate (Missing template beans/remove, application/remove with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jordanhannel/Documents/tessbday/coffeebean/app/views"
+):
+  
+app/controllers/beans_controller.rb:42:in `remove'
+Started POST "/beans/save" for ::1 at 2018-09-18 13:15:37 -0700
+Started POST "/beans/remove" for ::1 at 2018-09-18 13:15:37 -0700
+Processing by BeansController#remove as */*
+Processing by BeansController#save as */*
+  Parameters: {"beans"=>[{"id"=>1, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>true}], "bean"=>{}}
+  Parameters: {"beans"=>[{"id"=>1, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>true}, {"id"=>2, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>false}, {"id"=>3, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>false}, {"id"=>4, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>false}], "bean"=>{}}
+  [1m[36mBean Load (0.6ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 1.0ms)
+
+
+  [1m[36mBean Load (0.5ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 1.2ms)
+
+
+  
+  
+ActiveRecord::RecordNotFound (Couldn't find Bean with 'id'=1):
+  
+app/controllers/beans_controller.rb:37:in `block in remove'
+app/controllers/beans_controller.rb:36:in `each'
+app/controllers/beans_controller.rb:36:in `remove'
+ActiveRecord::RecordNotFound (Couldn't find Bean with 'id'=1):
+  
+app/controllers/beans_controller.rb:18:in `block in save'
+app/controllers/beans_controller.rb:15:in `each'
+app/controllers/beans_controller.rb:15:in `save'
+Started POST "/beans/save" for ::1 at 2018-09-18 13:15:38 -0700
+Started POST "/beans/remove" for ::1 at 2018-09-18 13:15:38 -0700
+Processing by BeansController#remove as */*
+  Parameters: {"beans"=>[{"id"=>1, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>true}, {"id"=>2, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}], "bean"=>{}}
+Processing by BeansController#save as */*
+  Parameters: {"beans"=>[{"id"=>1, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>true}, {"id"=>2, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}, {"id"=>3, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>false}, {"id"=>4, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>false}], "bean"=>{}}
+  [1m[36mBean Load (0.8ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bean with 'id'=1):
+  
+app/controllers/beans_controller.rb:37:in `block in remove'
+app/controllers/beans_controller.rb:36:in `each'
+app/controllers/beans_controller.rb:36:in `remove'
+  [1m[36mBean Load (21.1ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 23ms (ActiveRecord: 21.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bean with 'id'=1):
+  
+app/controllers/beans_controller.rb:18:in `block in save'
+app/controllers/beans_controller.rb:15:in `each'
+app/controllers/beans_controller.rb:15:in `save'
+Started POST "/beans/save" for ::1 at 2018-09-18 13:15:39 -0700
+Started POST "/beans/remove" for ::1 at 2018-09-18 13:15:39 -0700
+Processing by BeansController#save as */*
+  Parameters: {"beans"=>[{"id"=>1, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>true}, {"id"=>2, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}, {"id"=>3, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}, {"id"=>4, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>false}], "bean"=>{}}
+Processing by BeansController#remove as */*
+  Parameters: {"beans"=>[{"id"=>1, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>true}, {"id"=>2, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}, {"id"=>3, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}], "bean"=>{}}
+  [1m[36mBean Load (0.5ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bean with 'id'=1):
+  
+app/controllers/beans_controller.rb:18:in `block in save'
+app/controllers/beans_controller.rb:15:in `each'
+app/controllers/beans_controller.rb:15:in `save'
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 23ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bean with 'id'=1):
+  
+app/controllers/beans_controller.rb:37:in `block in remove'
+app/controllers/beans_controller.rb:36:in `each'
+app/controllers/beans_controller.rb:36:in `remove'
+Started POST "/beans/save" for ::1 at 2018-09-18 13:15:40 -0700
+Started POST "/beans/remove" for ::1 at 2018-09-18 13:15:40 -0700
+Processing by BeansController#save as */*
+  Parameters: {"beans"=>[{"id"=>1, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>true}, {"id"=>2, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}, {"id"=>3, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}, {"id"=>4, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>true}], "bean"=>{}}
+Processing by BeansController#remove as */*
+  Parameters: {"beans"=>[{"id"=>1, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>true}, {"id"=>2, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}, {"id"=>3, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}, {"id"=>4, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>true}], "bean"=>{}}
+  [1m[36mBean Load (0.6ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bean with 'id'=1):
+  
+app/controllers/beans_controller.rb:18:in `block in save'
+app/controllers/beans_controller.rb:15:in `each'
+app/controllers/beans_controller.rb:15:in `save'
+  [1m[36mBean Load (21.0ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 23ms (ActiveRecord: 21.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bean with 'id'=1):
+  
+app/controllers/beans_controller.rb:37:in `block in remove'
+app/controllers/beans_controller.rb:36:in `each'
+app/controllers/beans_controller.rb:36:in `remove'
+Started GET "/" for ::1 at 2018-09-18 13:15:41 -0700
+Processing by BeansController#index as HTML
+  Rendering beans/index.html.erb within layouts/application
+  Rendered beans/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 141ms (Views: 138.5ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/beans/get_beans" for ::1 at 2018-09-18 13:15:41 -0700
+Processing by BeansController#get_beans as JSON
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT "beans".* FROM "beans"[0m
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/beans/save" for ::1 at 2018-09-18 13:15:42 -0700
+Started POST "/beans/remove" for ::1 at 2018-09-18 13:15:42 -0700
+Processing by BeansController#remove as */*
+  Parameters: {"beans"=>[{"id"=>3, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}], "bean"=>{}}
+Processing by BeansController#save as */*
+  Parameters: {"beans"=>[{"id"=>2, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>false}, {"id"=>3, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}, {"id"=>4, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>false}], "bean"=>{}}
+  [1m[36mBean Load (0.8ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBean Load (0.4ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBean Destroy (0.4ms)[0m  [1m[31mDELETE FROM "beans" WHERE "beans"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 3.6ms)
+
+
+  
+ActionView::MissingTemplate (Missing template beans/remove, application/remove with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jordanhannel/Documents/tessbday/coffeebean/app/views"
+):
+  
+app/controllers/beans_controller.rb:42:in `remove'
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 404 Not Found in 62ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bean with 'id'=3):
+  
+app/controllers/beans_controller.rb:18:in `block in save'
+app/controllers/beans_controller.rb:15:in `each'
+app/controllers/beans_controller.rb:15:in `save'
+Started POST "/beans/save" for ::1 at 2018-09-18 13:15:43 -0700
+Started POST "/beans/remove" for ::1 at 2018-09-18 13:15:43 -0700
+Processing by BeansController#remove as */*
+  Parameters: {"beans"=>[{"id"=>2, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}, {"id"=>3, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}], "bean"=>{}}
+Processing by BeansController#save as */*
+  Parameters: {"beans"=>[{"id"=>2, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}, {"id"=>3, "name"=>"lel", "description"=>"lol", "country"=>"lul", "new_bean"=>false, "removed"=>true}, {"id"=>4, "name"=>nil, "description"=>nil, "country"=>nil, "new_bean"=>false, "removed"=>false}], "bean"=>{}}
+  [1m[36mBean Load (0.6ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBean Load (0.5ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBean Destroy (0.3ms)[0m  [1m[31mDELETE FROM "beans" WHERE "beans"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBean Load (0.4ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 1.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bean with 'id'=3):
+  
+app/controllers/beans_controller.rb:18:in `block in save'
+app/controllers/beans_controller.rb:15:in `each'
+app/controllers/beans_controller.rb:15:in `save'
+  [1m[36mBean Load (1.1ms)[0m  [1m[34mSELECT  "beans".* FROM "beans" WHERE "beans"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 404 Not Found in 26ms (ActiveRecord: 3.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bean with 'id'=3):
+  
+app/controllers/beans_controller.rb:37:in `block in remove'
+app/controllers/beans_controller.rb:36:in `each'
+app/controllers/beans_controller.rb:36:in `remove'
+Started GET "/" for ::1 at 2018-09-18 13:15:43 -0700
+Processing by BeansController#index as HTML
+  Rendering beans/index.html.erb within layouts/application
+  Rendered beans/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 151ms (Views: 147.8ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/beans/get_beans" for ::1 at 2018-09-18 13:15:44 -0700
+Processing by BeansController#get_beans as JSON
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT "beans".* FROM "beans"[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2018-09-18 13:16:36 -0700
+Processing by BeansController#index as HTML
+  Rendering beans/index.html.erb within layouts/application
+  Rendered beans/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 150ms (Views: 148.1ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/beans/get_beans" for ::1 at 2018-09-18 13:16:36 -0700
+Processing by BeansController#get_beans as JSON
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT "beans".* FROM "beans"[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2018-09-18 13:18:48 -0700
+Processing by BeansController#index as HTML
+  Rendering beans/index.html.erb within layouts/application
+  Rendered beans/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 144ms (Views: 141.7ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/beans/get_beans" for ::1 at 2018-09-18 13:18:48 -0700
+Processing by BeansController#get_beans as JSON
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT "beans".* FROM "beans"[0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2018-09-18 13:18:57 -0700
+Processing by BeansController#index as HTML
+  Rendering beans/index.html.erb within layouts/application
+  Rendered beans/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 152ms (Views: 149.6ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/beans/get_beans" for ::1 at 2018-09-18 13:18:58 -0700
+Processing by BeansController#get_beans as JSON
+  [1m[36mBean Load (0.3ms)[0m  [1m[34mSELECT "beans".* FROM "beans"[0m
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2018-09-18 13:23:05 -0700
+Processing by BeansController#index as HTML
+  Rendering beans/index.html.erb within layouts/application
+  Rendered beans/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 152ms (Views: 148.9ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/beans/get_beans" for ::1 at 2018-09-18 13:23:05 -0700
+Processing by BeansController#get_beans as JSON
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT "beans".* FROM "beans"[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2018-09-18 13:23:24 -0700
+Processing by BeansController#index as HTML
+  Rendering beans/index.html.erb within layouts/application
+  Rendered beans/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 149ms (Views: 147.1ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/beans/get_beans" for ::1 at 2018-09-18 13:23:24 -0700
+Processing by BeansController#get_beans as JSON
+  [1m[36mBean Load (0.2ms)[0m  [1m[34mSELECT "beans".* FROM "beans"[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
