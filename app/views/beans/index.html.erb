@@ -12,9 +12,9 @@
     <!-- Todo: Generate table body -->
     <tbody data-bind="foreach: beans">
     <tr>
-        <td><input data-bind="value: name" /></td>
-        <td><input data-bind="value: description" /></td>
-        <td><input data-bind="value: country" /></td>
+        <td><textarea rows="5" cols="30" data-bind="value: name" ></textarea></td>
+        <td><textarea rows="5" cols="30" data-bind="value: description" ></textarea></td>
+        <td><textarea rows="5" cols="30" data-bind="value: country" ></textarea></td>
         <td><a href="#" data-bind="click: $root.removeBean">Remove</a></td>
 </tr>         
     </tr>   

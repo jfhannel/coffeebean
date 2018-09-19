@@ -8,6 +8,8 @@ div {
 
 td {
 	align: "center";
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 #dialog-comments {
@@ -26,6 +28,10 @@ table {
 input {
     width: 300px;
     height: 60px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: inline-block;
+    word-break: break-word;
 }
 
 .modal {
